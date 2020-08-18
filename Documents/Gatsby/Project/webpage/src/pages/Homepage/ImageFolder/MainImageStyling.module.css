@@ -1,0 +1,52 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.imageComponent {
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+  right: 10px;
+  bottom: 5px;
+  margin-top: 0;
+  background-image: url(../../../../../Assets/joanna-kosinska-LbMy35NyCNg-unsplash.jpg);
+  background-size: 500px;
+  box-shadow: 5px 10px rgb(214, 207, 207);
+}
+.imageComponent p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 200%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  margin-bottom: 3%;
+}
+
+@keyframes subtitle {
+  0% {
+    border-bottom: solid black;
+  }
+  100% {
+    border-bottom: solid rgb(248, 26, 26);
+  }
+}
+.imageComponent p:hover {
+  border-bottom: solid red;
+  border-bottom: solid black;
+  animation-name: subtitle;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@media only screen and (min-width: 1000px) {
+  .imageComponent {
+    margin-left: 5%;
+    width: 90vw;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
+    text-align: center;
+  }
+}

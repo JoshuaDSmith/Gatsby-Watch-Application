@@ -1,0 +1,119 @@
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.TextForm {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  right: 10px;
+  bottom: 5px;
+  margin-top: 0;
+  background-color: #f0f8fa;
+  box-shadow: 5px 5px rgb(214, 207, 207);
+  display: block;
+  overflow-x: hidden;
+}
+.TextForm li {
+  margin: 0.9em 0;
+  display: block;
+  padding-bottom: 10px;
+  width: 300px;
+}
+
+@keyframes example {
+  0% {
+    border-bottom: solid black;
+    border-width: 10%;
+  }
+  100% {
+    border-bottom: solid rgb(248, 26, 26);
+    border-width: 100%;
+  }
+}
+.TextForm li:hover {
+  border-bottom: solid black;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.TextForm h1 {
+  margin-top: 5em;
+  color: ivory;
+  justify-content: space-evenly;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  text-justify: auto;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.TextForm section {
+  padding: 20px;
+  padding-top: 20px;
+}
+.TextForm p {
+  text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+  .TextForm {
+    width: 90vw;
+    position: relative;
+    margin-left: 5%;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  justify-content: center;
+  grid-gap: 20px;
+}
+.grid span {
+  width: 70.3%;
+  height: 20%;
+  height: auto;
+
+  justify-self: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 10px rgb(117, 106, 106);
+}
+.grid img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+}
+.grid h2 {
+  margin-top: 1em;
+  color: rgb(66, 66, 66);
+  font-family: "Source Sans Pro", sans-serif;
+
+  text-align: center;
+}
+.grid p {
+  margin-top: 1em;
+
+  padding: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+  .TextForm {
+    width: 100vw;
+    position: relative;
+    margin-left: 5%;
+  }
+  .grid {
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 20px;
+
+    justify-content: center;
+  }
+  .grid img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border-radius: 10px;
+  }
+}
