@@ -1,0 +1,19 @@
+.margin {
+  margin: 0;
+}
+
+.Homepage div {
+  margin: 0;
+  margin-top: 0.1;
+}
+/* hello my name is tony */
+:root {
+  --textColor: #ffffff;
+  --subheader-blue: #00a5e3;
+  --Cards: #e9e9e9;
+  --textColorBlack: #363840;
+  --special: #f4d349;
+  --section-bg-color: #27282f;
+  --buttonColor: #21647c;
+  --buttonColor2: #258aac;
+}
